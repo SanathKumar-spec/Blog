@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <title>Blog</title>
     <style>
+        *{
+            font-family: "Roboto", sans-serif;
+        }
+
         body{
             display: flex;
             flex-direction: column;
@@ -15,16 +20,22 @@
             align-items: center;
 
         }
-        *{
-            font-family: "Roboto", sans-serif;
+
+        header{
+            text-align: center;
         }
+
+        header h1{
+            margin: 0;
+        }
+
         main{
             width: 1200px;
             display: flex;
             justify-content: center;
             flex-direction: column;
         }
-        .main-container img{
+        img{
             width: 100%;
         }
 
@@ -40,13 +51,7 @@
             overflow: hidden;
             height: 650px;
         }
-        header{
-            text-align: center;
-        }
 
-        header h1{
-            margin: 0;
-        }
         .blog-2{
             display: flex;
             flex-direction: column;
@@ -55,7 +60,7 @@
             border: gray;
             box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
             border-radius: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             overflow: hidden;
             height: 650px;
 
@@ -73,11 +78,7 @@
             overflow: hidden;
             height: 650px;
         }
-        .blog-3 video{
-            object-fit: cover;
-            width: 100%;
-            height: 550px;
-        }
+
         .blog-4{
             display: flex;
             flex-direction: column;
@@ -90,16 +91,22 @@
             overflow: hidden;
             height: 650px;
         }
-        .blog-4 video{
+
+        .blog-4 video, .blog-3 video{
             object-fit: cover;
             width: 100%;
             height: 550px;
         }
+
+        .blog p{
+            padding: 10px;
+        }
+
         footer{
             text-align: center;
             margin-right: 10px;
             margin-left: 10px;
-            padding: 10pxgit ;
+            padding: 10px;
         }
     </style>
 </head>
@@ -110,24 +117,24 @@
         <p></p>
     </header>
     <main class="main-container">
-        <div class="blog-1">
+        <div class="blog blog-1">
             <img src="Mulliner Article Teaser 4.jpg">
             <h2 style="margin-bottom: 0;">Mulliner-2025</h2>
             <p>Bentley Mulliner represents the highest expression of luxury, where every detail is handcrafted to perfection. From bespoke interiors to exclusive finishes, it offers limitless personalization. This is not just a car—it’s a statement of individuality and timeless elegance.</p>
         </div>
 
-        <div class="blog-2">
+        <div class="blog blog-2">
             <img src="cropped.jpg">
             <h2 style="margin-bottom: 0;">Mulliner Coachbuilt</h2>
             <p>The ultimate in personal commissioning, Mulliner offers ultra-exclusive, one-of-one and limited-series vehicles that redefine bespoke luxury. The Mulliner Coachbuilt team—comprising visionary designers, master engineers, and skilled artisans—works tirelessly to transform your unique vision into reality. Every detail, from the finest materials to handcrafted finishes, reflects your personal taste, ensuring a creation that is truly unmatched in the world of automotive excellence.</p>
         </div>
-        <div class="blog-3">
+        <div class="blog blog-3">
             <video controls width="1000">
                 <source src="The new Flying Spur Mulliner.mp4" type="video/mp4">
             </video>
             <p>Experience the epitome of handcrafted luxury with the Bentley Mulliner Flying Spur. This masterpiece combines breathtaking design, peerless comfort, and cutting-edge innovation, all elevated by Mulliner’s bespoke craftsmanship. From exquisite hand-stitched interiors to exclusive custom details, every element reflects unmatched sophistication and individuality. The Flying Spur Mulliner is not just a car—it’s an extraordinary journey tailored to perfection.</p>
         </div>
-        <div class="blog-4">
+        <div class="blog blog-4">
             <video controls width="1000">
                 <source src="Bentley Mulliner Silhouette Collection.mp4" type="video/mp4">
             </video>
